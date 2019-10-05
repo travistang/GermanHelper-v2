@@ -1,0 +1,35 @@
+.SearchPageMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  width: 100%;
+}
+
+.SearchPageTop {
+  text-align: right;
+  padding-top: 52px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  height: 25vh;
+  min-height: 25vh; /* So that it won't be squeezed when the component below grows large*/
+  display: flex;
+  flex-direction: row;
+}
+.SearchPageBottom {
+  flex: 1;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.SearchResultGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

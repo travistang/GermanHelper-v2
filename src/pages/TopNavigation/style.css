@@ -1,0 +1,14 @@
+.TopNavigationContainer {
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.TopNavigationButtonContainer {
+  width: 24px;
+  font-size: 0px; /* Tuned to center the icon vertically */
+}

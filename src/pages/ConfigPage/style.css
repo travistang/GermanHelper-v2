@@ -1,0 +1,17 @@
+.ConfigPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+}
+
+.ConfigPageInner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

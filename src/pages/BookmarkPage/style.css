@@ -1,0 +1,17 @@
+.BookmarkPage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.BookmarkPageInnerContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 28px;
+  overflow-y: scroll;
+
+}

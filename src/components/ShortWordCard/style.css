@@ -1,0 +1,25 @@
+.ShortWordCardContainer {
+  display: flex;
+  flex-direction: row;
+  height: 78px;
+}
+
+.ShortWordHeadRow {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  mask-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.7) 80%, transparent 100%);
+}
+
+.ShortWordLeftContainer {
+  flex: 1;
+  height: 100%;
+  max-width: calc(100% - 48px);
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+.OfflineBanner {
+  position: absolute;
+  bottom: 56px;
+  left: 0px;
+  right: 0px;
+  height: 36px;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

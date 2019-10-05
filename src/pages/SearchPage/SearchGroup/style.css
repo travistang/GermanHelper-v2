@@ -1,0 +1,26 @@
+.SearchFormGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.SearchButton {
+  color: white !important;
+  margin-top: 28px !important;
+}
+
+.SearchFormInput {
+  display: flex;
+  flex: 1;
+}
+
+.SearchSuggestionCenterNotice {
+  padding: 16px;
+}
+
+.SuggestionsContainerAddWordRow {
+
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}

@@ -1,0 +1,10 @@
+.CircularProgressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+  width: 30vh;
+  margin: 16px;
+}

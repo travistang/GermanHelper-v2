@@ -1,0 +1,13 @@
+.CenterNotice {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.CenterNoticeIcon {
+  font-size: 72px !important;
+  margin-bottom: 16px !important;
+}

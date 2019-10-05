@@ -1,0 +1,68 @@
+.react-html5-camera-photo {
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: black;
+  display: flex;
+}
+
+.react-html5-camera-photo > video {
+  max-width: 100%;
+}
+
+.CameraBackButton {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  height: 48px;
+  width: 48px;
+  font-size: 48px;
+  color: white;
+  z-index: 2000;
+}
+
+.CameraViewWrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-between;
+
+}
+.CameraHelpText {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 28px;
+}
+.CameraShootButtonRow {
+  width: 100%;
+  margin-bottom: 28px;
+  height: 52px;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CameraShootButton {
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
