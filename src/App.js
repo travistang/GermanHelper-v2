@@ -26,8 +26,6 @@ import configureStore from './configureStore'
 import { Provider } from 'react-redux'
 const { store, persistor } = configureStore()
 
-persistor.purge()
-
 const history = createBrowserHistory({
   basename: process.env.PUBLIC_URL
 })
@@ -35,9 +33,10 @@ const history = createBrowserHistory({
 class App extends React.Component {
   render() {
     return (
-      <Router history={history}>
+
         <ThemeProvider theme={theme}>
           <Provider store={store}>
+            <Router history={history}>
             <PersistGate loading={null} persistor={persistor}>
               <div className="App">
                   <div className="MainContent">
@@ -55,9 +54,10 @@ class App extends React.Component {
                 <BottomNavigation />
               </div>
             </PersistGate>
+            </Router>
           </Provider>
         </ThemeProvider>
-      </Router>
+
 
     )
   }
