@@ -6,8 +6,8 @@ export const actions = {
 }
 
 const initialState = {
-  serverURL: 'http://localhost:8989',
-  proxyURL: 'http://localhost:8080/ocr'
+  proxyURL: 'http://localhost:8989',
+  serverURL: 'http://localhost:8080/ocr'
 }
 
 

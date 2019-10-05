@@ -60,6 +60,7 @@ function ConfigPage(props) {
 
     })
     setOpenSnackbar(true)
+    setTimeout(() => setOpenSnackbar(false), 2000)
   }
   React.useEffect(() => {
     // validate here

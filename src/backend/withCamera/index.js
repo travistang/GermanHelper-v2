@@ -13,9 +13,6 @@ export default function(WrappedComponent) {
   return withTheme(withServerConfig(
     withSnackbar(function(props) {
       const url = props.serverURL
-      console.log('url in camera')
-      console.log(url)
-      // const url = "http://localhost:8989/ocr"
       const {
         theme,
         setSnackbarConfig,

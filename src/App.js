@@ -17,6 +17,7 @@ import BookmarkPage from './pages/BookmarkPage';
 import EditBookmarkPage from './pages/EditBookmarkPage';
 import OCRSelectWordPage from './pages/OCRSelectWordPage';
 import ConfigPage from './pages/ConfigPage';
+import ActivityPage from './pages/ActivityPage';
 
 import { AnimatedSwitch } from 'react-router-transition'
 import transition, { mapStyles } from './transition';
@@ -45,7 +46,8 @@ class App extends React.Component {
                     <Route path="/edit" component={EditBookmarkPage} />
                     <Route path="/ocr" component={OCRSelectWordPage} />
                     <Route path="/settings" component={ConfigPage} />
-                  </div>
+                    <Route path="/activity" component={ActivityPage} />
+                </div>
 
                 <OfflineBanner />
                 <BottomNavigation />
