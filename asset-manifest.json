@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/GermanHelper-v2/static/css/main.467c12e5.chunk.css",
-    "main.js": "/GermanHelper-v2/static/js/main.88af5e3c.chunk.js",
-    "main.js.map": "/GermanHelper-v2/static/js/main.88af5e3c.chunk.js.map",
-    "runtime~main.js": "/GermanHelper-v2/static/js/runtime~main.9ef3b232.js",
-    "runtime~main.js.map": "/GermanHelper-v2/static/js/runtime~main.9ef3b232.js.map",
-    "static/css/2.f0405d8a.chunk.css": "/GermanHelper-v2/static/css/2.f0405d8a.chunk.css",
-    "static/js/2.e85d60b4.chunk.js": "/GermanHelper-v2/static/js/2.e85d60b4.chunk.js",
-    "static/js/2.e85d60b4.chunk.js.map": "/GermanHelper-v2/static/js/2.e85d60b4.chunk.js.map",
-    "index.html": "/GermanHelper-v2/index.html",
-    "precache-manifest.b80a60263d5453d6ce60252c31fe5689.js": "/GermanHelper-v2/precache-manifest.b80a60263d5453d6ce60252c31fe5689.js",
-    "service-worker.js": "/GermanHelper-v2/service-worker.js",
-    "static/css/2.f0405d8a.chunk.css.map": "/GermanHelper-v2/static/css/2.f0405d8a.chunk.css.map",
-    "static/css/main.467c12e5.chunk.css.map": "/GermanHelper-v2/static/css/main.467c12e5.chunk.css.map"
+    "main.css": "https://travistang.github.io/GermanHelper-v2/static/css/main.467c12e5.chunk.css",
+    "main.js": "https://travistang.github.io/GermanHelper-v2/static/js/main.799f0a66.chunk.js",
+    "main.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/main.799f0a66.chunk.js.map",
+    "runtime~main.js": "https://travistang.github.io/GermanHelper-v2/static/js/runtime~main.4d2552a6.js",
+    "runtime~main.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/runtime~main.4d2552a6.js.map",
+    "static/css/2.f0405d8a.chunk.css": "https://travistang.github.io/GermanHelper-v2/static/css/2.f0405d8a.chunk.css",
+    "static/js/2.e85d60b4.chunk.js": "https://travistang.github.io/GermanHelper-v2/static/js/2.e85d60b4.chunk.js",
+    "static/js/2.e85d60b4.chunk.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/2.e85d60b4.chunk.js.map",
+    "index.html": "https://travistang.github.io/GermanHelper-v2/index.html",
+    "precache-manifest.aebc3d06062bc9bca073fd0738c31231.js": "https://travistang.github.io/GermanHelper-v2/precache-manifest.aebc3d06062bc9bca073fd0738c31231.js",
+    "service-worker.js": "https://travistang.github.io/GermanHelper-v2/service-worker.js",
+    "static/css/2.f0405d8a.chunk.css.map": "https://travistang.github.io/GermanHelper-v2/static/css/2.f0405d8a.chunk.css.map",
+    "static/css/main.467c12e5.chunk.css.map": "https://travistang.github.io/GermanHelper-v2/static/css/main.467c12e5.chunk.css.map"
   }
 }
