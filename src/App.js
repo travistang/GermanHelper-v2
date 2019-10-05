@@ -30,8 +30,9 @@ const { store, persistor } = configureStore()
 persistor.purge()
 
 class App extends React.Component {
-
   render() {
+    const toProperRoute = path => (`${process.env.PUBLIC_URL}${path}`)
+    
     return (
       <Router>
         <ThemeProvider theme={theme}>
@@ -39,14 +40,14 @@ class App extends React.Component {
             <PersistGate loading={null} persistor={persistor}>
               <div className="App">
                   <div className="MainContent">
-                    <Route path="/search" component={SearchResultPage} />
-                    <Route path="/wordDetails" component={WordDetailsPage} />
-                    <Route path="/words" component={BookmarkPage} />
-                    <Route path="/edit" component={EditBookmarkPage} />
-                    <Route path="/ocr" component={OCRSelectWordPage} />
-                    <Route path="/settings" component={ConfigPage} />
-                    <Route path="/activity" component={ActivityPage} />
-                    <Route component={SearchPage} />
+                    <Route path={toProperRoute('/search')} component={SearchResultPage} />
+                    <Route path={toProperRoute("/wordDetails")} component={WordDetailsPage} />
+                    <Route path={toProperRoute("/words")} component={BookmarkPage} />
+                    <Route path={toProperRoute("/edit")} component={EditBookmarkPage} />
+                    <Route path={toProperRoute("/ocr")} component={OCRSelectWordPage} />
+                    <Route path={toProperRoute("/settings")} component={ConfigPage} />
+                    <Route path={toProperRoute("/activity")} component={ActivityPage} />
+                    <Route exact path={toProperRoute("/")} component={SearchPage} />
                 </div>
 
                 <OfflineBanner />
