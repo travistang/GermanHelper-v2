@@ -19,16 +19,12 @@ import OCRSelectWordPage from './pages/OCRSelectWordPage';
 import ConfigPage from './pages/ConfigPage';
 import ActivityPage from './pages/ActivityPage';
 
-import {createBrowserHistory} from 'history';
-
 import { PersistGate } from 'redux-persist/integration/react'
 import configureStore from './configureStore'
 import { Provider } from 'react-redux'
 const { store, persistor } = configureStore()
 
-const history = createBrowserHistory({
-  basename: process.env.PUBLIC_URL
-})
+
 
 class App extends React.Component {
   render() {
@@ -36,7 +32,7 @@ class App extends React.Component {
 
         <ThemeProvider theme={theme}>
           <Provider store={store}>
-            <Router history={history}>
+            <Router basename={process.env.PUBLIC_URL}>
             <PersistGate loading={null} persistor={persistor}>
               <div className="App">
                   <div className="MainContent">

@@ -78,19 +78,21 @@ export default function(WrappedComponent) {
             </Icon>
             <div className="CameraViewWrapper">
               <Webcam
+                width="100%"
+                height="40%"
                 ref={webcamRef}
                 audio={false}
                 screenshotFormat="image/jpeg"
                 onTakePhoto={onPhotoTaken}
                 videoConstraints={{
-                  width: 320,
-                  height: 240,
+                  // width: 240,
+                  // height: 320,
                   facingMode: 'environment'
                 }}
               />
               <div className="CameraHelpText">
                 <Typography variant="h3" style={{color: 'white'}}>
-                  Point your camera towards some German text, then click the button below.
+                  Point your camera towards some German texts and click the button below.
                 </Typography>
               </div>
               <div className="CameraShootButtonRow"
