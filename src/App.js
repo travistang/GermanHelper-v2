@@ -39,7 +39,6 @@ class App extends React.Component {
             <PersistGate loading={null} persistor={persistor}>
               <div className="App">
                   <div className="MainContent">
-                    <Route exact path="/" component={SearchPage} />
                     <Route path="/search" component={SearchResultPage} />
                     <Route path="/wordDetails" component={WordDetailsPage} />
                     <Route path="/words" component={BookmarkPage} />
@@ -47,6 +46,7 @@ class App extends React.Component {
                     <Route path="/ocr" component={OCRSelectWordPage} />
                     <Route path="/settings" component={ConfigPage} />
                     <Route path="/activity" component={ActivityPage} />
+                    <Route component={SearchPage} />
                 </div>
 
                 <OfflineBanner />
