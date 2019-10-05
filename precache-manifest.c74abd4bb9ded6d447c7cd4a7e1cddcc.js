@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c971c8e44960253e169a51498cfd5b8",
+    "revision": "311c80f9750a69966fdaf472507880d3",
     "url": "/GermanHelper-v2/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GermanHelper-v2/static/css/2.f0405d8a.chunk.css"
   },
   {
-    "revision": "23a56552cb8ea3123114",
+    "revision": "203ff6d2871d3b6807bc",
     "url": "/GermanHelper-v2/static/css/main.467c12e5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GermanHelper-v2/static/js/2.e85d60b4.chunk.js"
   },
   {
-    "revision": "23a56552cb8ea3123114",
-    "url": "/GermanHelper-v2/static/js/main.f118e8ee.chunk.js"
+    "revision": "203ff6d2871d3b6807bc",
+    "url": "/GermanHelper-v2/static/js/main.79243f99.chunk.js"
   },
   {
     "revision": "adac0de0fcee25e97576",
