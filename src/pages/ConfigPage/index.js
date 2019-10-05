@@ -1,6 +1,7 @@
 import React from 'react'
 import { withServerConfig } from '../../reducers/config'
 import { withTheme } from '@material-ui/styles'
+import withSnackbar from '../../backend/withSnackbar'
 
 import TopNavigation from '../TopNavigation'
 import Separator from '../../components/separator'
@@ -15,8 +16,10 @@ import './style.css'
 
 function ConfigPage(props) {
   const {
+    theme, // withTheme
     serverURL: defaultServerURL,
     proxyURL: defaultProxyURL,
+    setOpenSnackbar, setSnackbarConfig, // withSnackbar
     setConfig // withServerConfig
   } = props
 
@@ -37,6 +40,27 @@ function ConfigPage(props) {
   }
   const [isConfigValid, setIsConfigValid] = React.useState(false)
 
+  const onConfirmSetConfig = async () => {
+    await setConfig(tempConfig)
+    await setSnackbarConfig({
+      title: 'The new config has been saved',
+      icon: 'check',
+      style: {
+        color: 'white',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        backgroundColor: theme.palette.warning.main
+      },
+      anchorOrigin: {
+         vertical: 'bottom',
+         horizontal: 'left',
+       }
+
+    })
+    setOpenSnackbar(true)
+  }
   React.useEffect(() => {
     // validate here
     setIsConfigValid(validateTempConfig())
@@ -67,7 +91,7 @@ function ConfigPage(props) {
         <div style={{flex: 1}} />
         <Fab variant="extended" color="primary"
           disabled={!isConfigValid}
-          onClick={() => setConfig(tempConfig)}>
+          onClick={onConfirmSetConfig}>
           <Icon>save</Icon>
           <Separator horizontal />
           <Typography variant="h3">Save Settings</Typography>
@@ -79,5 +103,7 @@ function ConfigPage(props) {
 }
 
 export default withTheme(
-  withServerConfig(ConfigPage)
+  withServerConfig(
+    withSnackbar(ConfigPage)
+  )
 )
