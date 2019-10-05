@@ -83,6 +83,8 @@ export default function(WrappedComponent) {
                 screenshotFormat="image/jpeg"
                 onTakePhoto={onPhotoTaken}
                 videoConstraints={{
+                  width: 320,
+                  height: 240,
                   facingMode: 'environment'
                 }}
               />
