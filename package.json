@@ -25,7 +25,7 @@
     "redux-persist": "^6.0.0",
     "tesseract.js": "^2.0.0-alpha.16"
   },
-  "homepage": "https://travistang.github.io/travistang/GermanHelper-v2",
+  "homepage": "https://travistang.github.io/GermanHelper-v2",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
