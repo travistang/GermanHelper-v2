@@ -32,7 +32,7 @@ class App extends React.Component {
 
         <ThemeProvider theme={theme}>
           <Provider store={store}>
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router basename="/GermanHelper-v2">
             <PersistGate loading={null} persistor={persistor}>
               <div className="App">
                   <div className="MainContent">
