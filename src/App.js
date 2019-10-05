@@ -19,8 +19,7 @@ import OCRSelectWordPage from './pages/OCRSelectWordPage';
 import ConfigPage from './pages/ConfigPage';
 import ActivityPage from './pages/ActivityPage';
 
-import { AnimatedSwitch } from 'react-router-transition'
-import transition, { mapStyles } from './transition';
+import {createBrowserHistory} from 'history';
 
 import { PersistGate } from 'redux-persist/integration/react'
 import configureStore from './configureStore'
@@ -29,25 +28,27 @@ const { store, persistor } = configureStore()
 
 persistor.purge()
 
+const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL
+})
+
 class App extends React.Component {
   render() {
-    const toProperRoute = path => (`${process.env.PUBLIC_URL}${path}`)
-    
     return (
-      <Router>
+      <Router history={history}>
         <ThemeProvider theme={theme}>
           <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
               <div className="App">
                   <div className="MainContent">
-                    <Route path={toProperRoute('/search')} component={SearchResultPage} />
-                    <Route path={toProperRoute("/wordDetails")} component={WordDetailsPage} />
-                    <Route path={toProperRoute("/words")} component={BookmarkPage} />
-                    <Route path={toProperRoute("/edit")} component={EditBookmarkPage} />
-                    <Route path={toProperRoute("/ocr")} component={OCRSelectWordPage} />
-                    <Route path={toProperRoute("/settings")} component={ConfigPage} />
-                    <Route path={toProperRoute("/activity")} component={ActivityPage} />
-                    <Route exact path={toProperRoute("/")} component={SearchPage} />
+                    <Route path='/search' component={SearchResultPage} />
+                    <Route path="/wordDetails" component={WordDetailsPage} />
+                    <Route path="/words" component={BookmarkPage} />
+                    <Route path="/edit" component={EditBookmarkPage} />
+                    <Route path="/ocr" component={OCRSelectWordPage} />
+                    <Route path="/settings" component={ConfigPage} />
+                    <Route path="/activity" component={ActivityPage} />
+                    <Route exact path="/" component={SearchPage} />
                 </div>
 
                 <OfflineBanner />
