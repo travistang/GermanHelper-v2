@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fc94e2ff2213f35b46a5c35c64e2adb",
+    "revision": "8fcacf85568248694cc363a22363f1ae",
     "url": "https://travistang.github.io/GermanHelper-v2/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://travistang.github.io/GermanHelper-v2/static/css/2.f0405d8a.chunk.css"
   },
   {
-    "revision": "a1f3192e52206cda8874",
-    "url": "https://travistang.github.io/GermanHelper-v2/static/css/main.467c12e5.chunk.css"
+    "revision": "6c2fcb5a0c7436334e50",
+    "url": "https://travistang.github.io/GermanHelper-v2/static/css/main.11b4e3ee.chunk.css"
   },
   {
     "revision": "fbcdb77028cd58d5d66c",
     "url": "https://travistang.github.io/GermanHelper-v2/static/js/2.89adf429.chunk.js"
   },
   {
-    "revision": "a1f3192e52206cda8874",
+    "revision": "6c2fcb5a0c7436334e50",
     "url": "https://travistang.github.io/GermanHelper-v2/static/js/main.e5cb8382.chunk.js"
   },
   {
