@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c28334ec471db39b4389f24652a8730",
+    "revision": "1fc94e2ff2213f35b46a5c35c64e2adb",
     "url": "https://travistang.github.io/GermanHelper-v2/index.html"
   },
   {
