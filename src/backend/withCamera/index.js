@@ -82,6 +82,9 @@ export default function(WrappedComponent) {
                 audio={false}
                 screenshotFormat="image/jpeg"
                 onTakePhoto={onPhotoTaken}
+                videoConstraints={{
+                  facingMode: 'environment'
+                }}
               />
               <div className="CameraHelpText">
                 <Typography variant="h3" style={{color: 'white'}}>
