@@ -41,13 +41,15 @@ function SearchResultPage(props) {
       />
       <div className="SearchResultMain">
         {loading && loadingComponent}
-        { (!loading && wordInfo)? ( // if it is not loading and there are info
-            Object.keys(wordInfo).map(form => ( // then for each info....
-              formComponent(form, wordInfo[form])
-            ))):( // otherwise the loading and the not found message
-              !loading && notFoundComponent
-            )
-        }
+        <div className="SearchResultList">
+          { (!loading && wordInfo)? ( // if it is not loading and there are info
+              Object.keys(wordInfo).map(form => ( // then for each info....
+                formComponent(form, wordInfo[form])
+              ))):( // otherwise the loading and the not found message
+                !loading && notFoundComponent
+              )
+          }
+        </div>
       </div>
     </div>
   )

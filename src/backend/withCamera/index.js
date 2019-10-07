@@ -79,7 +79,7 @@ export default function(WrappedComponent) {
             <div className="CameraViewWrapper">
               <Webcam
                 width="100%"
-                height="40%"
+                height="70%"
                 ref={webcamRef}
                 audio={false}
                 screenshotFormat="image/jpeg"

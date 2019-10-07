@@ -18,3 +18,12 @@
   margin-top: 28px;
   margin-bottom: 28px;
 }
+
+.SearchResultList {
+  min-height: 0px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  mask-image: linear-gradient(to bottom, transparent 0%, white 15%, white 95%, transparent 100%);
+}

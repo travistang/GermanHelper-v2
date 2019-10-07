@@ -71,9 +71,15 @@ function SearchPage(props) {
             <Typography variant="h2">Recently Searched</Typography>
             <div style={{height: 28}} />
             {
-              searches.length?searches.reverse().map(search => (
-                <ShortWordCard {...search} />
-              )):(
+              searches.length?(
+                <div className="SearchResultList">
+                  {
+                    searches.reverse().map(search => (
+                      <ShortWordCard {...search} />
+                    ))
+                  }
+                </div>
+              ):(
                 <CenterNotice
                   iconName="search_outlined"
                   title="You did not search anything recently"
