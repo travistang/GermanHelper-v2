@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://travistang.github.io/GermanHelper-v2/precache-manifest.9d4978c394c11d016161105c0ad4aa3d.js"
+  "https://travistang.github.io/GermanHelper-v2/precache-manifest.4b7d8c17c20076b8ccd89f59fe8e5eb0.js"
 );
 
 self.addEventListener('message', (event) => {
