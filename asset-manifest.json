@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://travistang.github.io/GermanHelper-v2/static/css/main.56270cd7.chunk.css",
-    "main.js": "https://travistang.github.io/GermanHelper-v2/static/js/main.f35562e8.chunk.js",
-    "main.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/main.f35562e8.chunk.js.map",
+    "main.css": "https://travistang.github.io/GermanHelper-v2/static/css/main.f44fa3d6.chunk.css",
+    "main.js": "https://travistang.github.io/GermanHelper-v2/static/js/main.6e275141.chunk.js",
+    "main.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/main.6e275141.chunk.js.map",
     "runtime~main.js": "https://travistang.github.io/GermanHelper-v2/static/js/runtime~main.4d2552a6.js",
     "runtime~main.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/runtime~main.4d2552a6.js.map",
     "static/css/2.f0405d8a.chunk.css": "https://travistang.github.io/GermanHelper-v2/static/css/2.f0405d8a.chunk.css",
     "static/js/2.89adf429.chunk.js": "https://travistang.github.io/GermanHelper-v2/static/js/2.89adf429.chunk.js",
     "static/js/2.89adf429.chunk.js.map": "https://travistang.github.io/GermanHelper-v2/static/js/2.89adf429.chunk.js.map",
     "index.html": "https://travistang.github.io/GermanHelper-v2/index.html",
-    "precache-manifest.1407c0ef4de61a41698ec756662ee81b.js": "https://travistang.github.io/GermanHelper-v2/precache-manifest.1407c0ef4de61a41698ec756662ee81b.js",
+    "precache-manifest.cf0ffed0c714c7b1589179a2e4f430e1.js": "https://travistang.github.io/GermanHelper-v2/precache-manifest.cf0ffed0c714c7b1589179a2e4f430e1.js",
     "service-worker.js": "https://travistang.github.io/GermanHelper-v2/service-worker.js",
     "static/css/2.f0405d8a.chunk.css.map": "https://travistang.github.io/GermanHelper-v2/static/css/2.f0405d8a.chunk.css.map",
-    "static/css/main.56270cd7.chunk.css.map": "https://travistang.github.io/GermanHelper-v2/static/css/main.56270cd7.chunk.css.map"
+    "static/css/main.f44fa3d6.chunk.css.map": "https://travistang.github.io/GermanHelper-v2/static/css/main.f44fa3d6.chunk.css.map"
   }
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45b0bb6fb040c13aba789509f3718c26",
+    "revision": "1e4844515f7e429690b593f59ac523ae",
     "url": "https://travistang.github.io/GermanHelper-v2/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://travistang.github.io/GermanHelper-v2/static/css/2.f0405d8a.chunk.css"
   },
   {
-    "revision": "19dacdd173c164585740",
-    "url": "https://travistang.github.io/GermanHelper-v2/static/css/main.56270cd7.chunk.css"
+    "revision": "2b995f1d25dae758240c",
+    "url": "https://travistang.github.io/GermanHelper-v2/static/css/main.f44fa3d6.chunk.css"
   },
   {
     "revision": "fbcdb77028cd58d5d66c",
     "url": "https://travistang.github.io/GermanHelper-v2/static/js/2.89adf429.chunk.js"
   },
   {
-    "revision": "19dacdd173c164585740",
-    "url": "https://travistang.github.io/GermanHelper-v2/static/js/main.f35562e8.chunk.js"
+    "revision": "2b995f1d25dae758240c",
+    "url": "https://travistang.github.io/GermanHelper-v2/static/js/main.6e275141.chunk.js"
   },
   {
     "revision": "9f343a347ac2ebb7840c",
