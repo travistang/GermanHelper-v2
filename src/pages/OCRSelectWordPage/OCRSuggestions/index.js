@@ -6,15 +6,17 @@ import {
   Icon
 } from '@material-ui/core'
 import Separator from '../../../components/separator'
-import { serverURL } from '../../../backend/constants'
+import { withServerConfig } from '../../../reducers/config'
 import './style.css'
 
 function OCRSuggestions(props) {
   const {
     word,
     suggestionState,
+    serverURL, // withServerConfig
     history // withRouter
    } = props
+
   const [suggestions, setSuggestions] = React.useState(null)
   const [loading, setLoading ] = React.useState(true) // when this page loads, it is loading suggestions
 
@@ -62,4 +64,6 @@ function OCRSuggestions(props) {
   )
 }
 
-export default withRouter(OCRSuggestions)
+export default withRouter(
+  withServerConfig(OCRSuggestions)
+)
