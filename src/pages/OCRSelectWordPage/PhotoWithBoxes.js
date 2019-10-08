@@ -81,8 +81,11 @@ function PhotoWithBoxes(props) {
     image.onload = () => {
       const paddingSize = 20 * 2
       // setup dimension
-      canvas.height = image.height - paddingSize
-      canvas.width = image.width - paddingSize // padding
+      // canvas.width = window.innerWidth
+      canvas.height = window.innerHeight * 0.5
+      canvas.width = canvas.height * image.width / image.height
+      // canvas.height = image.height - paddingSize
+      // canvas.width = image.width - paddingSize // padding
       const rY = canvas.height / image.height
       const rX = canvas.width / image.width
 
