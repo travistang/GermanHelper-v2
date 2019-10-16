@@ -19,7 +19,7 @@ const ExerciseContext = React.createContext()
 export default function withExerciseMask(WrappedComponent) {
     
     return function(props) {
-        const [ showExerciseFab, setShowExerciseFab ] = React.useState(true)
+        const [ showExerciseFab, setShowExerciseFab ] = React.useState(false)
         const [ revealAnswers, setRevealAnswers ] = React.useState(false)
         const [ hasAnswerRevealed, setHasAnswerRevealed ] = React.useState(false)
         
@@ -87,7 +87,7 @@ const Mask = withTheme(function({
 */
 export function exerciseMask() {
     return function({children, ...props}) {
-        const [ reveal, setReveal ] = React.useState(false)
+        const [ reveal, setReveal ] = React.useState(true)
         return (
             reveal?children:(
                 <ExerciseContext.Consumer>

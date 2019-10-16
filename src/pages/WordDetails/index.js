@@ -129,9 +129,7 @@ function WordDetails(props) {
           <ol className="WordDetailsMeaningList">
             {
               info.meaning.map(meaning => (
-                <ExerciseMask className="WordDetailsMeaningExerciseMask">
                   <li className="WordDetailsMeaningItem">{meaning.trim()}</li>
-                </ExerciseMask>
               ))
             }
           </ol>
