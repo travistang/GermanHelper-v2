@@ -40,7 +40,7 @@ function OCRSelectWordPage(props) {
               />
             ):(
               <OCRSuggestions
-                suggestionStatxe={location.state}
+                suggestionState={location.state}
                 word={selectedWord && selectedWord.word}/>
             )
           }

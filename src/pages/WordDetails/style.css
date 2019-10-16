@@ -20,7 +20,9 @@
   flex: 1;
   overflow-y: scroll;
 }
-.ShortWordSummary {
+.WordDetailsMeaningExerciseMask {
+  width: 100%;
+  height: 20px;
 }
 
 .GrammSectionWrapper {
@@ -56,6 +58,7 @@
   margin-top: 28px;
   margin-bottom: 28px;
 }
+
 .SearchCountContainer {
   /* width: 36px; */
   display: flex;
@@ -63,8 +66,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.WordDetailsMeaningList {
 }
 
 .WordDetailsMeaningItem {

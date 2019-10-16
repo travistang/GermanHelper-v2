@@ -4,37 +4,48 @@ import { withTheme } from '@material-ui/styles'
 import { withRouter } from 'react-router-dom'
 import withBookmarks from '../../backend/withBookmarks'
 import withActionSheet from '../../backend/withActionSheet'
+import withExerciseMask, { ExerciseMask } from '../../backend/withExerciseMask'
 
-import ShortWordCard from '../../components/ShortWordCard'
 import ActionSheetOption from '../../components/ActionSheetComponent'
 import GrammarSection from './GrammarSection'
 import TopNavigation from '../TopNavigation'
 import { Typography } from '@material-ui/core'
 import CounterBadge from '../../components/CounterBadge'
-import { Icon } from '@material-ui/core'
 
 import './style.css'
 
 function WordDetails(props) {
   const {
     location, history, // withRouter
-    theme: {palette},  // withTheme
     setActionSheetComponents, // withActionSheet
     open, setOpen,            // withActionSheet
     getBookmark, bookmarks,   // withBookmarks
     newWordOrBookmark,        // withBookmarks
-    addBookmark, removeBookmark, // withBookmarks
+    addBookmark, removeBookmark,   // withBookmarks
+    setShowExerciseFab,            // withExerciseMask
+    exerciseRefs, setExerciseRefs, // withExerciseMask
     details
   } = props
   // state passed to this page
 
-  let { word, form, info, searchCount } = newWordOrBookmark(location.state)
+  let { 
+    word, form, info, searchCount, // word details
+    asExercise = false
+  } = newWordOrBookmark(location.state)
+
   const verticalBuffer = <div style={{height: 8}} />
   const subtitleRow = subtitle => (
     <div className="WordDetailsSubtitleRow">
       <Typography variant="h3">{subtitle}</Typography>
     </div>
   )
+  
+  // reveal the exercise fab if it is tagged as an exercise page
+  React.useEffect(() => {
+    if(asExercise) {
+      setShowExerciseFab(true)
+    }
+  }, [])
 
   React.useEffect(() => {
     const isBookmarked = getBookmark({ word, form })
@@ -76,7 +87,6 @@ function WordDetails(props) {
 
   return (
     <div className="WordDetailsContainer">
-
       <TopNavigation
         leftButton={{
           name: 'keyboard_arrow_left',
@@ -106,7 +116,12 @@ function WordDetails(props) {
             </Typography>
           </div>
         </div>
-        <GrammarSection form={form} info={info} />
+
+        <GrammarSection 
+          
+          form={form} info={info} 
+         />
+
         <div className="WordDetailsRow">
           {subtitleRow("Meaning")}
         </div>
@@ -114,7 +129,9 @@ function WordDetails(props) {
           <ol className="WordDetailsMeaningList">
             {
               info.meaning.map(meaning => (
-                <li className="WordDetailsMeaningItem">{meaning.trim()}</li>
+                <ExerciseMask className="WordDetailsMeaningExerciseMask">
+                  <li className="WordDetailsMeaningItem">{meaning.trim()}</li>
+                </ExerciseMask>
               ))
             }
           </ol>
@@ -127,7 +144,9 @@ function WordDetails(props) {
 export default withTheme(
   withRouter(
     withActionSheet(
-      withBookmarks(WordDetails)
+      withBookmarks(
+        withExerciseMask(WordDetails)
+      )
     )
   )
 )

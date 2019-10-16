@@ -18,7 +18,6 @@ function SearchResultPage(props) {
   } = props
   const word = location.pathname.split('/').pop()
   // the state that this page carries if it is from OCR suggestions
-  const suggestionState = location.stsate
 
   const loadingComponent = range(4).map(_ => <List />)
   const notFoundComponent = <CenterNotice iconName="search" title="No German Words Found" />

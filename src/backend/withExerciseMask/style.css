@@ -1,0 +1,8 @@
+.ExerciseFab {
+    box-shadow: none !important;
+}
+
+.ExerciseMask {
+    flex: 1;
+    height: 20px;
+}
