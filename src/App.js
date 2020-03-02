@@ -10,6 +10,7 @@ import OfflineBanner from './pages/OfflineBanner'
 import theme from './theme'
 import { ThemeProvider } from '@material-ui/styles';
 
+import ExercisePage from './pages/ExercisePage';
 import SearchPage from './pages/SearchPage';
 import SearchResultPage from './pages/SearchResultPage';
 import WordDetailsPage from './pages/WordDetails';
@@ -26,10 +27,8 @@ const { store, persistor } = configureStore()
 
 
 
-class App extends React.Component {
-  render() {
+function App() {
     return (
-
         <ThemeProvider theme={theme}>
           <Provider store={store}>
             <Router basename="/GermanHelper-v2">
@@ -40,9 +39,10 @@ class App extends React.Component {
                     <Route path="/wordDetails" component={WordDetailsPage} />
                     <Route path="/words" component={BookmarkPage} />
                     <Route path="/edit" component={EditBookmarkPage} />
-                    <Route path="/ocr" component={OCRSelectWordPage} />
+                    <Route path="/ocr" component= {OCRSelectWordPage} />
                     <Route path="/settings" component={ConfigPage} />
                     <Route path="/activity" component={ActivityPage} />
+                    <Route path="/exercise" component={ExercisePage} />
                     <Route exact path="/" component={SearchPage} />
                 </div>
 
@@ -56,7 +56,6 @@ class App extends React.Component {
 
 
     )
-  }
 }
 
 export default App;

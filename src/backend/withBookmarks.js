@@ -13,6 +13,7 @@ export function newWordOrBookmark(bookmarks, {word, form, info, ...rest}) {
   if(bookmark) return { word, info: bookmark.info, form, ...rest }
   else return { word, form , info, ...rest}
 }
+
 export default function(WrappedComponent) {
   return connect(           // bounding the wrapped component to redux
     state => state.bookmark,

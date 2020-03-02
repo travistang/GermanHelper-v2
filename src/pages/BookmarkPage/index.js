@@ -16,6 +16,10 @@ function BookmarkPage(props) {
     <div className="BookmarkPage">
       <TopNavigation
         title="Bookmarks"
+        rightButton={{
+          name: "edit",
+          onClick: () => history.push('/exercise')
+        }}
       />
       <div className="BookmarkPageInnerContainer">
         {!bookmarks.length &&
